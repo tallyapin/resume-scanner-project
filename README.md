@@ -1,7 +1,3 @@
-Here’s a professional, GitHub-ready **README.md** for your project — structured clearly and written to appeal to both technical and non-technical readers:
-
----
-
 # 🧠 Resume Scan Buddy
 
 **Smart Resume Scanner for Job Matching Optimization**
