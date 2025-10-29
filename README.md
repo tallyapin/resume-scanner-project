@@ -37,7 +37,6 @@ ResumeScanBuddy/
 │   ├── styles.css         # Front-end styling
 │   └── chart.js           # Chart for match score visualization
 ├── database.db            # SQLite3 database file
-├── requirements.txt       # Project dependencies
 └── README.md              # Project documentation
 ```
 
@@ -84,38 +83,6 @@ ResumeScanBuddy/
 
 ---
 
-## 🧑‍💻 Installation & Setup
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/<your-username>/ResumeScanBuddy.git
-   cd ResumeScanBuddy
-   ```
-
-2. **Create a Virtual Environment:**
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # On Mac/Linux
-   venv\Scripts\activate      # On Windows
-   ```
-
-3. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Run the Application:**
-
-   ```bash
-   flask run
-   ```
-
-   The app will start on **[http://127.0.0.1:5000/](http://127.0.0.1:5000/)**
-
----
 
 ## 📈 Example Output
 
