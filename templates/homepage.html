@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeScanBuddy</title>
+
+    <!-- http://getbootstrap.com/docs/5.1/ -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- favicon-->
+    <link href="/static/favicon.ico" rel="icon">
+
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <!-- Header start-->
+    <header class="header p-3 position-absolute start-0 top-0 end-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="/" class="text-decoration-none text-white fs-5 fw-bold"><img src="/static/favicon.png" class="favicon" alt="Favicon" width="24" height="24">ResumeScanBuddy</a>
+        </div>
+    </header>
+    <!-- Header end-->
+
+
+    <!-- Hero start-->
+    <section class="hero mb-4">
+        <div class="hero__overlay"></div>
+        <video playsinline="playsinLine" autoplay="autoplay" muted="muted" loading="lazy" class="hero__video">
+            <source src="static/Hero_Video-1.mp4" type="video/mp4">
+        </video>
+        <div class="h-100 container-custom position-relative hero__content">
+            <div class="d-flex h-100 align-items-center hero__content-width">
+                <div class="text-white">
+                    <h1 class="fw-bold mb-4">Unlock Your Resume's Potential</h1>
+                    <p class="lead mb-4">Optimize your resume to pass through applicant tracking systems and stand out from the competition.</p>
+                    <a href="#scan-now" class="mt-2 btn btn-lg btn-outline-light" role="button">Scan Now</a>
+                </div>
+            </div>
+        </div>
+        <a href="#scroll-down" class="hero__scroll-btn">
+            Learn More <i class="bi bi-arrow-down-short"></i>
+        </a>
+    </section>
+    <!-- Hero end-->
+
+
+    <!-- link used to scroll page down-->
+    <a id="scroll-down"></a>
+    
+
+    <!-- section 1 start -->
+    <secion class="landing__content container-custom">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-12 col-sm-6 d-md-flex justify-content-md-ceneter landing__content-col">
+                <img src="static/AI.jpg" width="400" height="400" loading="lazy" class="img-fluid pd-4 landing__content-img">
+            </div>
+            <div class="col-12 col-sm-6 align-self-center justify-content-md-ceneter landing__content-col">
+                <div class="landing__content-width">
+                    <h1 class="h2 mb-4 fw-bold" >Optimize Your Resume Using Artificial Intelligence</h1>
+                    <div class="lead">
+                        <span>Our advanced AI-driven ATS scanning technology analyzes your resume against job descriptions, ensuring your application stands out from the competition.</span><br><br>
+                        <a href="#scan-now" class="custom-scan-now no-underline">Scan Now <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+    <!-- section 1 end -->
+
+
+    <!-- section 2 start -->
+    <secion class="landing__content container-custom">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-12 col-sm-6 pt-3 d-md-flex text-center landing__content-col_inv order-sm-1">
+                <img src="static/resume-scan-img-2.jpg" width="325" height="325" loading="lazy" class="img-fluid pd-4 landing__content-img_inv">
+            </div>
+            <div class="col-12 col-sm-6 pt-3 align-self-center justify-content-md-ceneter landing__content-col">
+                <div class="landing__content-width">
+                    <h1 class="h2 mb-4 fw-bold" >Unlock Your Success and Secure Your Dream Job</h1>
+                    <div class="homepage__list">
+                        <span><i class="bi bi-check-lg custom-icon"></i>Tailor your resume to job descriptions</span><br class="mb-2">
+                        <span><i class="bi bi-check-lg custom-icon"></i>Identify and optimize keywords</span><br class="mb-2">
+                        <span><i class="bi bi-check-lg custom-icon"></i>Ensure compatibility with ATS systems</span><br class="mb-2">
+                        <span><i class="bi bi-check-lg custom-icon"></i>Highlight your career achievements</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+    <!-- section 2 end -->
+
+  
+    <!-- link used to scroll down to scanning section -->
+    <a id="scan-now"></a>
+    
+
+    <!-- section 3 start - text area -->
+    <section class="landing__content-1 container-custom-textarea text-center">
+        <div class="pt-2">
+            <h1 class="h2 mb-4 fw-bold">Effortless Scanning in Two Simple Steps!</h1>
+        </div>
+        <div>
+            <form id="submit_form" method="post" action="/" enctype="multipart/form-data">
+                <div class="row mx-auto justify-content-center">
+                    <div class="col-12 col-sm-6 justify-content-md-ceneter landing__content-col textarea-width">
+                        <h4>Step 1: Upload Resume</h4>
+                        <label for="resume_file" class="custom-file-upload">
+                            <input type="file" id="resume_file" accept=".docx" onchange="handleFileUpload(event)">
+                            Upload Resume
+                        </label>
+                        <textarea id="resume_text" name="resume_text" rows="12" placeholder="Drag and drop or paste your resume here"></textarea>
+                    </div>
+                  <div class="col-12 col-sm-6 mt-4 justify-content-md-ceneter landing__content-col textarea-width align-self-center">
+                        <h4 id="step_2">Step 2: Insert Job Description</h4>
+                        <textarea id="job_text" name="job_text" rows="12" placeholder="Paste the job description here"></textarea>    
+                  </div>
+                </div>
+                <br>
+                <div class="mb-2">
+                    <button type="submit" class="scan-now">Scan</button>
+                </div>
+                <span id="form_error">{{ form_error }}</span>
+            </form>          
+        </div>
+    </section>
+    <!-- section 3 end -->
+
+
+    <!-- section 4 contact us start -->
+    <secion class="landing__content container-custom">
+        <div class="row mx-auto justify-content-center">
+            <div class="col-12 col-sm-6 pt-3 d-md-flex text-center landing__content-col_inv order-sm-1">
+                <img src="static/research.jpg" width="325" height="325" loading="lazy" class="img-fluid pd-4 landing__content-img_inv">
+            </div>
+            <div class="col-12 col-sm-6 pt-3 align-self-center justify-content-md-ceneter landing__content-col">
+                <div class="landing__content-width">
+                    <h1 class="h2 mb-4 fw-bold" >Let Us Help You Craft a Winning Resume Today</h1>
+                    <div class="homepage__list">
+                        <span>Contact us for personalized assistance in creating a standout resume that opens doors to your dream opportunities.</span><br><br>
+                        <a href="/contact-us" class="custom-scan-now no-underline">Contact Us <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+    <!-- section 4 contact us start -->
+
+
+
+
+    <!-- section 5 start - 3 col's -->
+    <section class="pb-4">
+        <div class="container-custom justify-content-center my-3">
+            <row class="row mx-2 justify-content-center">
+                <div class="col-12 col-sm-4 mb-3 mx-3 text-center three-col-max-width">
+                    <img src="static/free-use-3.jpg" class="mb-3 img-fluid" alt="" width="300" height="300" loading="lazy">
+                    <h1 class="h2 fw-bold">Free to Use</h1>
+                    <p class="lead">Our ATS resume scanner is free to use. No subscription fees or hidden charges.</p>
+                </div>
+                <div class="col-12 col-sm-4 mb-3 mx-3 text-center three-col-max-width">
+                    <img src="static/timer-1.jpg" class="mb-3 img-fluid" alt="" width="300" height="300" loading="lazy">
+                    <h1 class="h2 fw-bold">Quick Results</h1>
+                    <p class="lead">Powerful algorithms analyze your resume and provide instant feedback.</p>
+                </div>
+                <div class="col-12 col-sm-4 mb-3 mx-3 text-center three-col-max-width">
+                    <img src="static/privacy.jpg" class="mb-3 img-fluid" alt="" width="300" height="300" loading="lazy">
+                    <h1 class="h2 fw-bold">Privacy Policy</h1>
+                    <p class="lead">Committed to protecting your privacy with secure data handling.</p>
+                </div>
+            </row>
+        </div>
+    </section>
+    <!-- section 5 end -->
+
+
+    <!-- footer start -->
+    <footer class="footer footer_color text-white">
+        <div class="container-custom d-flex justify-content-between align-items-center py-3 border-highlight">
+            <div class="col-md-4 d-flex align-items-center mx-3">
+                <a href="/" class="me-2 text-decoration-none text-white">
+                    <span>&copy; 2023 ResumeScanBuddy</span>
+                </a>
+            </div>
+            <div class="col-md-4 right-aligned-text mx-3" >
+                <a href="/privacy-policy" class="me-2 text-decoration-none text-white">
+                    <span class=>Privacy Policy</span>
+                </a>
+                <a href="/contact-us" class="me-2 text-decoration-none text-white">
+                    <span class=>Contact Us</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.5.1/mammoth.browser.min.js" integrity="sha512-GXQyA7vCy/AVkekAX69TNpeV1QQu1m+K5Dhx38qyccm27y8nRDjUozszUdmGVnP/j7w9X5VEBmrXGaBZAORXgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.5.1/mammoth.browser.js" integrity="sha512-RtRr8hlUeglh6xKG0RwZ6rEnDhvNmwlkoW1izCoBqTjysgkJWGT5h3NqaDTlyno4Jg0cxrBUdD8HqgfxKUlQ0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script>
+        
+        var textarea = document.getElementById("resume_text");
+
+      
+        // Handle file drop event
+        textarea.addEventListener("drop", function(event) {
+            event.preventDefault();
+            var file = event.dataTransfer.files[0];
+            var reader = new FileReader();
+            reader.onload = function(e) {
+            var arrayBuffer = e.target.result;
+            var options = {
+                arrayBuffer: arrayBuffer
+            };
+            convertToPlainText(options);
+            };
+            reader.readAsArrayBuffer(file);
+        });
+
+        // Handle file upload and update the resume text
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            const resumeArea = document.getElementById('resume_text');
+
+           
+
+            reader.onload = function (e) {
+                var arrayBuffer = e.target.result;
+                var options = {
+                    arrayBuffer: arrayBuffer
+                };
+                convertToPlainText(options);
+                };
+                resumeArea = reader.readAsArrayBuffer(file);
+            };
+
+
+
+        // Handle paste event
+        textarea.addEventListener("paste", function(event) {
+            event.preventDefault();
+            var clipboardData = event.clipboardData || window.clipboardData;
+            var text = clipboardData.getData("text/plain");
+            textarea.value = text;
+        });
+
+        // Handle dragover event to allow dropping
+        textarea.addEventListener("dragover", function(event) {
+            event.preventDefault();
+        });
+
+        // Function to convert Word file to plain text using mammoth.js
+        function convertToPlainText(options) {
+            var arrayBuffer = options.arrayBuffer;
+            if (!arrayBuffer) return;
+            var file = new Blob([arrayBuffer]);
+            var reader = new FileReader();
+            reader.onloadend = function(e) {
+            var arrayBuffer = e.target.result;
+            var options = {
+                arrayBuffer: arrayBuffer
+            };
+            mammoth.extractRawText(options).then(function(result) {
+                textarea.value = result.value;
+            });
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+
+        document.getElementById("submit_form").addEventListener("submit", function(event) {
+            
+
+            var resume_text= document.getElementById("resume_text");
+            var job_text = document.getElementById("job_text");
+            var form_error = document.getElementById("form_error");
+
+            // Check if either textarea is empty
+            if (resume_text.value.trim() === "" || job_text.value.trim() === "") {
+                form_error.textContent = "Please fill in all required fields.";
+                event.preventDefault(); // Prevent form submission
+            }
+            else {
+                // Clear error message
+                form_error.textContent = "";
+            }
+        });
+
+        
+
+        var scrollToElement = "{{ scroll_to_element }}";
+    
+        // Check if the identifier exists and scroll to the element
+        if (scrollToElement) {
+            var element = document.getElementById(scrollToElement);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
